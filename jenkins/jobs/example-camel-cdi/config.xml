@@ -5,11 +5,12 @@
     <keepDependencies>false</keepDependencies>
     <properties/>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@1.8">
-        <script>
-            node {
-                git &apos;https://github.com/fabric8io/example-camel-cdi&apos;
-                sh &apos;mvn clean install&apos;
-            }
+        <script>node {
+  git &apos;https://github.com/fabric8io/example-camel-cdi&apos;
+   withEnv([&quot;PATH+MAVEN=${tool &apos;3.3.1&apos;}/bin&quot;]) {
+    sh &apos;mvn clean install&apos;
+   }
+}
         </script>
         <sandbox>false</sandbox>
     </definition>
