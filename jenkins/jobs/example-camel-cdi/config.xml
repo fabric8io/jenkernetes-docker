@@ -8,7 +8,7 @@
         <script>node {
   git &apos;https://github.com/fabric8io/example-camel-cdi&apos;
    withEnv([&quot;PATH+MAVEN=${tool &apos;maven-3.3.1&apos;}/bin&quot;]) {
-    sh &apos;mvn clean install&apos;
+    sh &apos;mvn clean deploy&apos;
    }
 }
         </script>

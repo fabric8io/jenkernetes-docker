@@ -9,7 +9,7 @@ COPY jenkins/jobs /usr/share/jenkins/ref/jobs
 #COPY mvnsettings.xml $JENKINS_HOME/.m2/settings.xml
 
 # lets put a copy in the roots folder too for when running as root
-#COPY mvnsettings.xml /root/.m2/settings.xml
+COPY mvnsettings.xml /root/.m2/settings.xml
 
 
 # these env vars should be replaced by kubernetes configuration in the OpenShift templates:
