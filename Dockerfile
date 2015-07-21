@@ -2,7 +2,8 @@ FROM waprin/jenkernetes
 MAINTAINER fabric8.io (http://fabric8.io/)
 
 RUN echo metrics >> /usr/share/jenkins/plugins.txt && \
-	echo notification >> /usr/share/jenkins/plugins.txt
+	echo notification >> /usr/share/jenkins/plugins.txt && \
+	plugins.sh /usr/share/jenkins/plugins.txt
 	
 # lets configure and add default jobs
 COPY jenkins/*.xml /usr/share/jenkins/ref/
