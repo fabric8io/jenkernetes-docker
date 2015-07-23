@@ -32,3 +32,6 @@ ENV KUBERNETES_MASTER https://${KUBERNETES_SERVICE_HOST}:${KUBERNETES_SERVICE_PO
 ENV KUBERNETES_TRUST_CERT true
 ENV SKIP_TLS_VERIFY true
 ENV KUBERNETES_NAMESPACE default
+
+ADD fabric8-jenkins-workflow-steps-1.0.hpi /usr/share/jenkins/ref/plugins/
+
