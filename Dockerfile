@@ -4,7 +4,13 @@ MAINTAINER fabric8.io (http://fabric8.io/)
 RUN echo metrics >> /usr/share/jenkins/plugins.txt && \
 	echo notification >> /usr/share/jenkins/plugins.txt && \
 	plugins.sh /usr/share/jenkins/plugins.txt
-	
+
+RUN cd /usr/local && \
+  wget https://github.com/github/hub/releases/download/v2.2.1/hub-linux-amd64-2.2.1.tar.gz && \
+  tar xf /usr/local/hub-linux-amd64-2.2.1.tar.gz && \
+  rm /usr/local/hub-linux-amd64-2.2.1.tar.gz && \
+  ln -s /usr/local/hub-linux-amd64-2.2.1/hub /usr/bin/hub
+
 # lets configure and add default jobs
 COPY jenkins/*.xml /usr/share/jenkins/ref/
 COPY jenkins/jobs /usr/share/jenkins/ref/jobs
