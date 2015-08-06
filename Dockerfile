@@ -42,5 +42,5 @@ ENV KUBERNETES_NAMESPACE default
 ADD fabric8-jenkins-workflow-steps-1.0.hpi /usr/share/jenkins/ref/plugins/
 
 
-ADD jenkins.properties $JENKINS_HOME/
-ADD load-properties.groovy $JENKINS_HOME/init.groovy.d/
+ADD jenkins.properties /usr/share/jenkins/ref/
+ADD load-properties.groovy /usr/share/jenkins/ref/init.groovy.d/
