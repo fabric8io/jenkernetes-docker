@@ -34,10 +34,8 @@ ENV JENKINS_GOGS_EMAIL gogsadmin@fabric8.local
 ENV DOCKER_HOST unix:///var/run/docker.sock
 ENV SEED_GIT_URL https://github.com/fabric8io/default-jenkins-dsl.git
 
-ENV KUBERNETES_MASTER https://${KUBERNETES_SERVICE_HOST}:${KUBERNETES_SERVICE_PORT}
 ENV KUBERNETES_TRUST_CERT true
 ENV SKIP_TLS_VERIFY true
-ENV KUBERNETES_NAMESPACE default
 
 ADD fabric8-jenkins-workflow-steps-1.0.hpi /usr/share/jenkins/ref/plugins/
 
