@@ -59,9 +59,17 @@
         </pluginRepository>
       </pluginRepositories>
     </profile>
+    <profile>
+      <id>gpg</id>
+      <properties>
+        <gpg.executable>gpg</gpg.executable>
+        <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
+      </properties>
+    </profile>
   </profiles>
   <activeProfiles>
     <!--make the profile active all the time -->
     <activeProfile>nexus</activeProfile>
+    <activeProfile>gpg</activeProfile>
   </activeProfiles>
 </settings>
