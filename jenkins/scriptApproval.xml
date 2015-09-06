@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1.15">
+  <approvedScriptHashes>
+    <string>7782dc83c5ef6f9cc3c6834acd1142d022b5f264</string>
+  </approvedScriptHashes>
+  <approvedSignatures>
+    <string>method groovy.lang.GroovyObject getProperty java.lang.String</string>
+    <string>method groovy.util.XmlSlurper parse java.lang.String</string>
+    <string>method groovy.util.slurpersupport.GPathResult text</string>
+    <string>new groovy.util.XmlSlurper</string>
+  </approvedSignatures>
+  <aclApprovedSignatures/>
+  <approvedClasspathEntries/>
+  <pendingScripts/>
+  <pendingSignatures/>
+  <pendingClasspathEntries/>
+</scriptApproval>
