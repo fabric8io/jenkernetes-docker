@@ -21,7 +21,6 @@ COPY jenkins/jobs /usr/share/jenkins/ref/jobs
 # lets put a copy in the roots folder too for when running as root
 COPY mvnsettings.xml /root/.m2/settings.xml
 
-
 # these env vars should be replaced by kubernetes configuration in the OpenShift templates:
 ENV NEXUS_USERNAME admin
 ENV NEXUS_PASSWORD admin123
@@ -42,3 +41,5 @@ ADD fabric8-jenkins-workflow-steps-1.0.hpi /usr/share/jenkins/ref/plugins/
 
 ADD jenkins.properties /usr/share/jenkins/ref/
 ADD load-properties.groovy /usr/share/jenkins/ref/init.groovy.d/
+
+COPY ssh-config /root/.ssh/config

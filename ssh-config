@@ -1,0 +1,3 @@
+Host github.com
+   User git
+   IdentityFile /var/jenkins/.ssh-git/ssh-key
