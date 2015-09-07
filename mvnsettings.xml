@@ -27,6 +27,11 @@
     <username>${env.DOCKER_REGISTRY_USERNAME}</username>
     <password>${env.DOCKER_REGISTRY_PASSWORD}</password>
   </server>
+  <server>
+    <id>oss-sonatype-staging</id>
+    <username>${env.SONATYPE_USERNAME}</username>
+    <password>${env.SONATYPE_PASSWORD}</password>
+  </server>
 </servers>
 
 
