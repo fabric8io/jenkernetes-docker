@@ -23,7 +23,7 @@
     <password>${env.NEXUS_PASSWORD}</password>
   </server>
   <server>
-    <id>docker-registry</id>
+    <id>docker.io</id>
     <username>${env.DOCKER_REGISTRY_USERNAME}</username>
     <password>${env.DOCKER_REGISTRY_PASSWORD}</password>
   </server>
