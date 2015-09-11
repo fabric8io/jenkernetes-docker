@@ -67,7 +67,7 @@
     <profile>
       <id>release</id>
       <properties>
-        <gpg.executable>release</gpg.executable>
+        <gpg.executable>gpg</gpg.executable>
         <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
       </properties>
     </profile>
