@@ -3,6 +3,8 @@ MAINTAINER fabric8.io (http://fabric8.io/)
 
 RUN echo metrics >> /usr/share/jenkins/plugins.txt && \
 	echo notification >> /usr/share/jenkins/plugins.txt && \
+	echo monitoring >> /usr/share/jenkins/plugins.txt && \
+	echo plain-credentials >> /usr/share/jenkins/plugins.txt && \
 	plugins.sh /usr/share/jenkins/plugins.txt
 
 RUN cd /usr/local && \
