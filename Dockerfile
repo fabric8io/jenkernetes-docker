@@ -3,9 +3,7 @@ MAINTAINER fabric8.io (http://fabric8.io/)
 
 RUN echo metrics >> /usr/share/jenkins/plugins.txt && \
 	echo notification >> /usr/share/jenkins/plugins.txt && \
-	echo monitoring >> /usr/share/jenkins/plugins.txt && \
 	echo plain-credentials >> /usr/share/jenkins/plugins.txt && \
-	echo template-workflows >> /usr/share/jenkins/plugins.txt && \
 	plugins.sh /usr/share/jenkins/plugins.txt
 
 RUN cd /usr/local && \
@@ -46,3 +44,7 @@ ADD jenkins.properties /usr/share/jenkins/ref/
 ADD load-properties.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 COPY ssh-config /root/.ssh/config
+
+ADD http://central.maven.org/maven2/io/fabric8/agent-bond-agent/0.1.0/agent-bond-agent-0.1.0.jar /root/agent-bond.jar
+COPY agent.properties /root/
+COPY config.json /root/
