@@ -27,6 +27,8 @@
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachFileRecurse java.io.File groovy.lang.Closure</string>
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods withInputStream java.io.File groovy.lang.Closure</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object</string>
+    <string>method java.lang.Object getClass</string>
+    <string>new java.lang.String java.lang.String</string>
     <string>method groovy.lang.GroovyObject getProperty java.lang.String</string>
     <string>method groovy.util.XmlSlurper parse java.lang.String</string>
     <string>method groovy.util.slurpersupport.GPathResult text</string>
@@ -42,6 +44,9 @@
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getCount java.util.regex.Matcher</string>
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods leftShift java.util.Collection java.lang.Object</string>
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods size java.lang.Object[]</string>
+    <string>method groovy.util.XmlSlurper parseText java.lang.String</string>
+    <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods toInteger java.lang.String</string>
+    <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter compareGreaterThan java.lang.Object java.lang.Object</string>
   </approvedSignatures>
   <aclApprovedSignatures>
     <string>method groovy.util.ConfigSlurper parse java.util.Properties</string>

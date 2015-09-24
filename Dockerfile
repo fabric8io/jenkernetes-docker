@@ -45,6 +45,4 @@ ADD load-properties.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 COPY ssh-config /root/.ssh/config
 
-ADD http://central.maven.org/maven2/io/fabric8/agent-bond-agent/0.1.0/agent-bond-agent-0.1.0.jar /root/agent-bond.jar
-COPY agent.properties /root/
-COPY config.json /root/
+ADD postStart.sh /root/
