@@ -14,7 +14,6 @@ RUN cd /usr/local && \
 
 # lets configure and add default jobs
 COPY jenkins/*.xml /usr/share/jenkins/ref/
-COPY jenkins/jobs /usr/share/jenkins/ref/jobs
 
 # configure maven settings and nexus mirroring and authentication
 #COPY mvnsettings.xml $JENKINS_HOME/.m2/settings.xml
@@ -45,4 +44,6 @@ ADD load-properties.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 COPY ssh-config /root/.ssh/config
 
+# remember to chmod any scripts so they are executable
 ADD postStart.sh /root/
+ADD test.sh /root/
