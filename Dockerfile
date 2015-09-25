@@ -46,4 +46,3 @@ COPY ssh-config /root/.ssh/config
 
 # remember to chmod any scripts so they are executable
 ADD postStart.sh /root/
-ADD test.sh /root/
