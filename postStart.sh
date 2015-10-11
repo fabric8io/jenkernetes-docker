@@ -3,7 +3,6 @@
 # ***** IMPORTANT *****
 # add lots of error handling.  If this script fails it's hard to know why the pods keeps restarting
 # ***** IMPORTANT *****
-
 if [ -d "/var/jenkins/.ssh-git" ]; then
   chmod 600 /var/jenkins/.ssh-git/ssh-key
   chmod 600 /var/jenkins/.ssh-git/ssh-key.pub
@@ -53,8 +52,4 @@ if [ "$JENKINS_WORKFLOW_GIT_REPOSITORY" ]; then
     rm -rf /root/repositoryscripts
 
   fi
-fi
-
-if [ "$DOCKER_REGISTRY_SERVER_ID" = "docker.io" ]; then
-  docker login -u $DOCKER_REGISTRY_USERNAME -p $DOCKER_REGISTRY_PASSWORD -e fabric8-admin@googlegroups.com
 fi
