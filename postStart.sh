@@ -54,3 +54,7 @@ if [ "$JENKINS_WORKFLOW_GIT_REPOSITORY" ]; then
 
   fi
 fi
+
+if [ "$DOCKER_REGISTRY_SERVER_ID" = "docker.io" ]; then
+  docker login -u $DOCKER_REGISTRY_USERNAME -p $DOCKER_REGISTRY_PASSWORD -e fabric8-admin@googlegroups.com
+fi
