@@ -23,7 +23,7 @@
     <password>${env.NEXUS_PASSWORD}</password>
   </server>
   <server>
-    <id>${env.DOCKER_REGISTRY_ID}</id>
+    <id>${env.DOCKER_REGISTRY_SERVER_ID}</id>
     <username>${env.DOCKER_REGISTRY_USERNAME}</username>
     <password>${env.DOCKER_REGISTRY_PASSWORD}</password>
   </server>
