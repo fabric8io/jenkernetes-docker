@@ -34,6 +34,8 @@
     <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods withInputStream java.io.File groovy.lang.Closure</string>
     <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object</string>
     <string>method java.lang.Object getClass</string>
+    <string>method java.net.URL openConnection</string>
+    <string>method java.net.URLConnection setRequestProperty java.lang.String java.lang.String</string>
     <string>new java.lang.String java.lang.String</string>
     <string>method groovy.lang.GroovyObject getProperty java.lang.String</string>
     <string>method groovy.util.XmlSlurper parse java.lang.String</string>
