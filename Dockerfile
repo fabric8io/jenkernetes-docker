@@ -4,6 +4,12 @@ MAINTAINER fabric8.io (http://fabric8.io/)
 RUN echo metrics >> /usr/share/jenkins/plugins.txt && \
 	echo notification >> /usr/share/jenkins/plugins.txt && \
 	echo plain-credentials >> /usr/share/jenkins/plugins.txt && \
+	echo ace-editor >> /usr/share/jenkins/plugins.txt && \
+	echo jquery-detached >> /usr/share/jenkins/plugins.txt && \
+	echo jackson2-api >> /usr/share/jenkins/plugins.txt && \
+	echo workflow-cps-global-lib >> /usr/share/jenkins/plugins.txt && \
+	echo workflow-aggregator >> /usr/share/jenkins/plugins.txt && \
+	echo workflow-cps >> /usr/share/jenkins/plugins.txt && \
 	plugins.sh /usr/share/jenkins/plugins.txt
 
 RUN cd /usr/local && \
